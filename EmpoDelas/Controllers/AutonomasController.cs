@@ -34,7 +34,7 @@ namespace EmpoDelas.Controllers
             }
 
             var autonoma = await _context.Autonoma
-                .FirstOrDefaultAsync(m => m.id_autonoma == id);
+                .FirstOrDefaultAsync(m => m.Id_autonoma == id);
             if (autonoma == null)
             {
                 return NotFound();
@@ -54,7 +54,7 @@ namespace EmpoDelas.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("id_autonoma,nome_autonoma,sobrenome_autonoma,email_autonoma,senha_autonoma,telefone_autonoma,nomeNegocio_autonoma")] Autonoma autonoma)
+        public async Task<IActionResult> Create([Bind("Id_autonoma,Nome_autonoma,Sobrenome_autonoma,Email_autonoma,DataNasc_autonoma,NumTelefone_autonoma,Endereco_autonoma,Cep_autonoma,NomeNegocio_autonoma,ContatoNegocio_autonoma,CategoriaNegocio_autonoma,DescricaoNegocio_autonoma,ComprovanteResid_autonoma")] Autonoma autonoma)
         {
             if (ModelState.IsValid)
             {
@@ -86,9 +86,9 @@ namespace EmpoDelas.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("id_autonoma,nome_autonoma,sobrenome_autonoma,email_autonoma,senha_autonoma,telefone_autonoma,nomeNegocio_autonoma")] Autonoma autonoma)
+        public async Task<IActionResult> Edit(int id, [Bind("Id_autonoma,Nome_autonoma,Sobrenome_autonoma,Email_autonoma,DataNasc_autonoma,NumTelefone_autonoma,Endereco_autonoma,Cep_autonoma,NomeNegocio_autonoma,ContatoNegocio_autonoma,CategoriaNegocio_autonoma,DescricaoNegocio_autonoma,ComprovanteResid_autonoma")] Autonoma autonoma)
         {
-            if (id != autonoma.id_autonoma)
+            if (id != autonoma.Id_autonoma)
             {
                 return NotFound();
             }
@@ -102,7 +102,7 @@ namespace EmpoDelas.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!AutonomaExists(autonoma.id_autonoma))
+                    if (!AutonomaExists(autonoma.Id_autonoma))
                     {
                         return NotFound();
                     }
@@ -125,7 +125,7 @@ namespace EmpoDelas.Controllers
             }
 
             var autonoma = await _context.Autonoma
-                .FirstOrDefaultAsync(m => m.id_autonoma == id);
+                .FirstOrDefaultAsync(m => m.Id_autonoma == id);
             if (autonoma == null)
             {
                 return NotFound();
@@ -147,7 +147,7 @@ namespace EmpoDelas.Controllers
 
         private bool AutonomaExists(int id)
         {
-            return _context.Autonoma.Any(e => e.id_autonoma == id);
+            return _context.Autonoma.Any(e => e.Id_autonoma == id);
         }
     }
 }

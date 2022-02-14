@@ -12,31 +12,51 @@
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="id_afiliada" />
+            <input type="hidden" asp-for="Id_afiliada" />
             <div class="form-group">
-                <label asp-for="nome_afiliada" class="control-label"></label>
-                <input asp-for="nome_afiliada" class="form-control" />
-                <span asp-validation-for="nome_afiliada" class="text-danger"></span>
+                <label asp-for="Nome_afiliada" class="control-label"></label>
+                <input asp-for="Nome_afiliada" class="form-control" />
+                <span asp-validation-for="Nome_afiliada" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="sobrenome_afiliada" class="control-label"></label>
-                <input asp-for="sobrenome_afiliada" class="form-control" />
-                <span asp-validation-for="sobrenome_afiliada" class="text-danger"></span>
+                <label asp-for="Sobrenome_afiliada" class="control-label"></label>
+                <input asp-for="Sobrenome_afiliada" class="form-control" />
+                <span asp-validation-for="Sobrenome_afiliada" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="email_afiliada" class="control-label"></label>
-                <input asp-for="email_afiliada" class="form-control" />
-                <span asp-validation-for="email_afiliada" class="text-danger"></span>
+                <label asp-for="Email_afiliada" class="control-label"></label>
+                <input asp-for="Email_afiliada" class="form-control" />
+                <span asp-validation-for="Email_afiliada" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="senha_afiliada" class="control-label"></label>
-                <input asp-for="senha_afiliada" class="form-control" />
-                <span asp-validation-for="senha_afiliada" class="text-danger"></span>
+                <label asp-for="DataNasc_afiliada" class="control-label"></label>
+                <input asp-for="DataNasc_afiliada" class="form-control" />
+                <span asp-validation-for="DataNasc_afiliada" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="telefone_afiliada" class="control-label"></label>
-                <input asp-for="telefone_afiliada" class="form-control" />
-                <span asp-validation-for="telefone_afiliada" class="text-danger"></span>
+                <label asp-for="NumTelefone_afiliada" class="control-label"></label>
+                <input asp-for="NumTelefone_afiliada" class="form-control" />
+                <span asp-validation-for="NumTelefone_afiliada" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Endereco_afiliada" class="control-label"></label>
+                <input asp-for="Endereco_afiliada" class="form-control" />
+                <span asp-validation-for="Endereco_afiliada" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cep_afiliada" class="control-label"></label>
+                <input asp-for="Cep_afiliada" class="form-control" />
+                <span asp-validation-for="Cep_afiliada" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Descricao_afiliada" class="control-label"></label>
+                <input asp-for="Descricao_afiliada" class="form-control" />
+                <span asp-validation-for="Descricao_afiliada" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ComprovanteResid_afiliada" class="control-label"></label>
+                <input asp-for="ComprovanteResid_afiliada" class="form-control" />
+                <span asp-validation-for="ComprovanteResid_afiliada" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />

@@ -4,43 +4,43 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Criar</h1>
+<h1>Create</h1>
 
-<h4>Produtos e Servicos</h4>
+<h4>ProdutoServico</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="codigo_produtoServico" class="control-label"></label>
-                <input asp-for="codigo_produtoServico" class="form-control" />
-                <span asp-validation-for="codigo_produtoServico" class="text-danger"></span>
+                <label asp-for="Codigo_produtoServico" class="control-label"></label>
+                <input asp-for="Codigo_produtoServico" class="form-control" />
+                <span asp-validation-for="Codigo_produtoServico" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="tipo_produtoServico" class="control-label"></label>
-                <input asp-for="tipo_produtoServico" class="form-control" />
-                <span asp-validation-for="tipo_produtoServico" class="text-danger"></span>
+                <label asp-for="Tipo_produtoServico" class="control-label"></label>
+                <input asp-for="Tipo_produtoServico" class="form-control" />
+                <span asp-validation-for="Tipo_produtoServico" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="nome_produtoServico" class="control-label"></label>
-                <input asp-for="nome_produtoServico" class="form-control" />
-                <span asp-validation-for="nome_produtoServico" class="text-danger"></span>
+                <label asp-for="Nome_produtoServico" class="control-label"></label>
+                <input asp-for="Nome_produtoServico" class="form-control" />
+                <span asp-validation-for="Nome_produtoServico" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="descricao_produtoServico" class="control-label"></label>
-                <input asp-for="descricao_produtoServico" class="form-control" />
-                <span asp-validation-for="descricao_produtoServico" class="text-danger"></span>
+                <label asp-for="Descricao_produtoServico" class="control-label"></label>
+                <input asp-for="Descricao_produtoServico" class="form-control" />
+                <span asp-validation-for="Descricao_produtoServico" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="preco_produtoServico" class="control-label"></label>
-                <input asp-for="preco_produtoServico" class="form-control" />
-                <span asp-validation-for="preco_produtoServico" class="text-danger"></span>
+                <label asp-for="Preco_produtoServico" class="control-label"></label>
+                <input asp-for="Preco_produtoServico" class="form-control" />
+                <span asp-validation-for="Preco_produtoServico" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="nomeNegocio_autonoma" class="control-label"></label>
-                <input asp-for="nomeNegocio_autonoma" class="form-control" />
-                <span asp-validation-for="nomeNegocio_autonoma" class="text-danger"></span>
+                <label asp-for="NomeNegocio_autonoma" class="control-label"></label>
+                <input asp-for="NomeNegocio_autonoma" class="form-control" />
+                <span asp-validation-for="NomeNegocio_autonoma" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="FK_id_autonoma" class="control-label"></label>
@@ -55,7 +55,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Voltar para lista</a>
+    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

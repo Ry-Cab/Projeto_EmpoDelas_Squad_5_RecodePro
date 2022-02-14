@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\empoDelas\\EmpoDelas.csproj": {}
+    "C:\\Users\\REMAKKER\\Desktop\\ry workplace\\3_Projeto_Social\\EmpoDelas\\EmpoDelas\\EmpoDelas.csproj": {}
   },
   "projects": {
-    "D:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\empoDelas\\EmpoDelas.csproj": {
+    "C:\\Users\\REMAKKER\\Desktop\\ry workplace\\3_Projeto_Social\\EmpoDelas\\EmpoDelas\\EmpoDelas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\empoDelas\\EmpoDelas.csproj",
+        "projectUniqueName": "C:\\Users\\REMAKKER\\Desktop\\ry workplace\\3_Projeto_Social\\EmpoDelas\\EmpoDelas\\EmpoDelas.csproj",
         "projectName": "EmpoDelas",
-        "projectPath": "D:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\empoDelas\\EmpoDelas.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "D:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\empoDelas\\obj\\",
+        "projectPath": "C:\\Users\\REMAKKER\\Desktop\\ry workplace\\3_Projeto_Social\\EmpoDelas\\EmpoDelas\\EmpoDelas.csproj",
+        "packagesPath": "C:\\Users\\REMAKKER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\REMAKKER\\Desktop\\ry workplace\\3_Projeto_Social\\EmpoDelas\\EmpoDelas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\REMAKKER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }

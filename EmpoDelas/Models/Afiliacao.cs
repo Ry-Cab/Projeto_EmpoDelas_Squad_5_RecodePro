@@ -9,10 +9,14 @@ namespace empodelas.Models
     public class Afiliacao
     {
         [Key]
-        public int id_afiliacao { get; set; }
+        public int Id_afiliacao { get; set; }
 
-        [Required]
-        public string codigo_produtoServico { get; set; }
+        [Required(ErrorMessage = "Por favor, insira o código do produto ou serviço cadastrado.")]
+        [StringLength(10)]
+        public string Codigo_produtoServico { get; set; }
+
+        [StringLength(255)]
+        public string Descricao_afiliacao { get; set; }
 
         public int FK_id_afiliada { get; set; }
         public virtual Afiliada Afiliada { get; set; }

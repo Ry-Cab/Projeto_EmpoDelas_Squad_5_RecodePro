@@ -503,30 +503,10 @@ C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\
 C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\EmpoDelas.TagHelpers.output.cache
 C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\EmpoDelas.RazorCoreGenerate.cache
 C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Afiliacaos\Create.cshtml.g.cs
-C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Afiliacaos\Delete.cshtml.g.cs
-C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Afiliacaos\Details.cshtml.g.cs
-C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Afiliacaos\Edit.cshtml.g.cs
-C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Afiliacaos\Index.cshtml.g.cs
-C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Afiliadas\Create.cshtml.g.cs
-C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Afiliadas\Delete.cshtml.g.cs
-C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Afiliadas\Details.cshtml.g.cs
-C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Afiliadas\Edit.cshtml.g.cs
-C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Afiliadas\Index.cshtml.g.cs
-C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Autonomas\Create.cshtml.g.cs
-C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Autonomas\Delete.cshtml.g.cs
-C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Autonomas\Details.cshtml.g.cs
-C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Autonomas\Edit.cshtml.g.cs
-C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Autonomas\Index.cshtml.g.cs
 C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Home\Administrador.cshtml.g.cs
 C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Home\Conosco.cshtml.g.cs
 C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Home\Somos.cshtml.g.cs
-C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\ProdutoServicos\Create.cshtml.g.cs
-C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\ProdutoServicos\Delete.cshtml.g.cs
-C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\ProdutoServicos\Details.cshtml.g.cs
-C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\ProdutoServicos\Edit.cshtml.g.cs
-C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\ProdutoServicos\Index.cshtml.g.cs
 C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
@@ -722,3 +702,24 @@ C:\Users\Remakker\Desktop\Empodelas3\Projeto_EmpoDelas_Squad_5_RecodePro\EmpoDel
 C:\Users\Remakker\Desktop\Empodelas3\Projeto_EmpoDelas_Squad_5_RecodePro\EmpoDelas\obj\Debug\net5.0\ref\EmpoDelas.dll
 C:\Users\Remakker\Desktop\Empodelas3\Projeto_EmpoDelas_Squad_5_RecodePro\EmpoDelas\obj\Debug\net5.0\EmpoDelas.pdb
 C:\Users\Remakker\Desktop\Empodelas3\Projeto_EmpoDelas_Squad_5_RecodePro\EmpoDelas\obj\Debug\net5.0\EmpoDelas.genruntimeconfig.cache
+C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Autonomas\Create.cshtml.g.cs
+C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Autonomas\Delete.cshtml.g.cs
+C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Autonomas\Details.cshtml.g.cs
+C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Autonomas\Edit.cshtml.g.cs
+C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Autonomas\Index.cshtml.g.cs
+C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Afiliadas\Create.cshtml.g.cs
+C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Afiliadas\Delete.cshtml.g.cs
+C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Afiliadas\Details.cshtml.g.cs
+C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Afiliadas\Edit.cshtml.g.cs
+C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Afiliadas\Index.cshtml.g.cs
+C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\ProdutoServicos\Create.cshtml.g.cs
+C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\ProdutoServicos\Delete.cshtml.g.cs
+C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\ProdutoServicos\Details.cshtml.g.cs
+C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\ProdutoServicos\Edit.cshtml.g.cs
+C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\ProdutoServicos\Index.cshtml.g.cs
+C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Afiliacaos\Create.cshtml.g.cs
+C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Afiliacaos\Delete.cshtml.g.cs
+C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Afiliacaos\Details.cshtml.g.cs
+C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Afiliacaos\Edit.cshtml.g.cs
+C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\Afiliacaos\Index.cshtml.g.cs
+C:\Users\REMAKKER\Desktop\ry workplace\3_Projeto_Social\EmpoDelas\EmpoDelas\obj\Debug\net5.0\Razor\Views\ProdutoServicos\IndexAdmin.cshtml.g.cs

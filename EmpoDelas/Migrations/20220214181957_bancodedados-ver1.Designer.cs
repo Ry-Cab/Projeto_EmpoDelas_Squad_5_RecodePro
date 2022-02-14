@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace EmpoDelas.Data.Migrations
+namespace EmpoDelas.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220212001356_BDinicial")]
-    partial class BDinicial
+    [Migration("20220214181957_bancodedados-ver1")]
+    partial class bancodedadosver1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -223,13 +223,22 @@ namespace EmpoDelas.Data.Migrations
 
             modelBuilder.Entity("empodelas.Models.Afiliacao", b =>
                 {
-                    b.Property<int>("id_afiliacao")
+                    b.Property<int>("Id_afiliacao")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("Afiliadaid_afiliada")
+                    b.Property<int?>("AfiliadaId_afiliada")
                         .HasColumnType("int");
+
+                    b.Property<string>("Codigo_produtoServico")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.Property<string>("Descricao_afiliacao")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<int>("FK_id_afiliada")
                         .HasColumnType("int");
@@ -237,142 +246,184 @@ namespace EmpoDelas.Data.Migrations
                     b.Property<int>("FK_id_produtoServico")
                         .HasColumnType("int");
 
-                    b.Property<int?>("ProdutoServicoid_produtoServico")
+                    b.Property<int?>("ProdutoServicoId_produtoServico")
                         .HasColumnType("int");
 
-                    b.Property<string>("codigo_produtoServico")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.HasKey("Id_afiliacao");
 
-                    b.HasKey("id_afiliacao");
+                    b.HasIndex("AfiliadaId_afiliada");
 
-                    b.HasIndex("Afiliadaid_afiliada");
-
-                    b.HasIndex("ProdutoServicoid_produtoServico");
+                    b.HasIndex("ProdutoServicoId_produtoServico");
 
                     b.ToTable("Afiliacao");
                 });
 
             modelBuilder.Entity("empodelas.Models.Afiliada", b =>
                 {
-                    b.Property<int>("id_afiliada")
+                    b.Property<int>("Id_afiliada")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("email_afiliada")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<string>("nome_afiliada")
-                        .IsRequired()
-                        .HasMaxLength(75)
-                        .HasColumnType("nvarchar(75)");
-
-                    b.Property<string>("senha_afiliada")
+                    b.Property<string>("Cep_afiliada")
                         .IsRequired()
                         .HasMaxLength(9)
                         .HasColumnType("nvarchar(9)");
 
-                    b.Property<string>("sobrenome_afiliada")
+                    b.Property<string>("ComprovanteResid_afiliada")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DataNasc_afiliada")
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
+
+                    b.Property<string>("Descricao_afiliada")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Email_afiliada")
                         .IsRequired()
                         .HasMaxLength(75)
                         .HasColumnType("nvarchar(75)");
 
-                    b.Property<string>("telefone_afiliada")
+                    b.Property<string>("Endereco_afiliada")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Nome_afiliada")
+                        .IsRequired()
+                        .HasMaxLength(75)
+                        .HasColumnType("nvarchar(75)");
+
+                    b.Property<string>("NumTelefone_afiliada")
                         .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
-                    b.HasKey("id_afiliada");
+                    b.Property<string>("Sobrenome_afiliada")
+                        .IsRequired()
+                        .HasMaxLength(75)
+                        .HasColumnType("nvarchar(75)");
+
+                    b.HasKey("Id_afiliada");
 
                     b.ToTable("Afiliada");
                 });
 
             modelBuilder.Entity("empodelas.Models.Autonoma", b =>
                 {
-                    b.Property<int>("id_autonoma")
+                    b.Property<int>("Id_autonoma")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("email_autonoma")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<string>("nomeNegocio_autonoma")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("nome_autonoma")
-                        .IsRequired()
-                        .HasMaxLength(75)
-                        .HasColumnType("nvarchar(75)");
-
-                    b.Property<string>("senha_autonoma")
-                        .IsRequired()
-                        .HasMaxLength(9)
-                        .HasColumnType("nvarchar(9)");
-
-                    b.Property<string>("sobrenome_autonoma")
-                        .IsRequired()
-                        .HasMaxLength(75)
-                        .HasColumnType("nvarchar(75)");
-
-                    b.Property<string>("telefone_autonoma")
+                    b.Property<string>("CategoriaNegocio_autonoma")
                         .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
-                    b.HasKey("id_autonoma");
+                    b.Property<string>("Cep_autonoma")
+                        .IsRequired()
+                        .HasMaxLength(9)
+                        .HasColumnType("nvarchar(9)");
+
+                    b.Property<string>("ComprovanteResid_autonoma")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ContatoNegocio_autonoma")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("DataNasc_autonoma")
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
+
+                    b.Property<string>("DescricaoNegocio_autonoma")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Email_autonoma")
+                        .IsRequired()
+                        .HasMaxLength(75)
+                        .HasColumnType("nvarchar(75)");
+
+                    b.Property<string>("Endereco_autonoma")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("NomeNegocio_autonoma")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Nome_autonoma")
+                        .IsRequired()
+                        .HasMaxLength(75)
+                        .HasColumnType("nvarchar(75)");
+
+                    b.Property<string>("NumTelefone_autonoma")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("Sobrenome_autonoma")
+                        .IsRequired()
+                        .HasMaxLength(75)
+                        .HasColumnType("nvarchar(75)");
+
+                    b.HasKey("Id_autonoma");
 
                     b.ToTable("Autonoma");
                 });
 
             modelBuilder.Entity("empodelas.Models.ProdutoServico", b =>
                 {
-                    b.Property<int>("id_produtoServico")
+                    b.Property<int>("Id_produtoServico")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("Codigo_produtoServico")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.Property<string>("Descricao_produtoServico")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
                     b.Property<int>("FK_id_autonoma")
                         .HasColumnType("int");
 
-                    b.Property<string>("codigo_produtoServico")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("descricao_produtoServico")
-                        .HasMaxLength(510)
-                        .HasColumnType("nvarchar(510)");
-
-                    b.Property<int?>("id_autonoma1")
+                    b.Property<int?>("Id_autonoma1")
                         .HasColumnType("int");
 
-                    b.Property<string>("nomeNegocio_autonoma")
+                    b.Property<string>("NomeNegocio_autonoma")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("nome_produtoServico")
+                    b.Property<string>("Nome_produtoServico")
                         .IsRequired()
                         .HasMaxLength(60)
                         .HasColumnType("nvarchar(60)");
 
-                    b.Property<decimal>("preco_produtoServico")
+                    b.Property<decimal>("Preco_produtoServico")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<string>("tipo_produtoServico")
+                    b.Property<string>("Tipo_produtoServico")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("id_produtoServico");
+                    b.HasKey("Id_produtoServico");
 
-                    b.HasIndex("id_autonoma1");
+                    b.HasIndex("Id_autonoma1");
 
                     b.ToTable("ProdutoServico");
                 });
@@ -432,11 +483,11 @@ namespace EmpoDelas.Data.Migrations
                 {
                     b.HasOne("empodelas.Models.Afiliada", "Afiliada")
                         .WithMany()
-                        .HasForeignKey("Afiliadaid_afiliada");
+                        .HasForeignKey("AfiliadaId_afiliada");
 
                     b.HasOne("empodelas.Models.ProdutoServico", "ProdutoServico")
                         .WithMany()
-                        .HasForeignKey("ProdutoServicoid_produtoServico");
+                        .HasForeignKey("ProdutoServicoId_produtoServico");
 
                     b.Navigation("Afiliada");
 
@@ -445,11 +496,11 @@ namespace EmpoDelas.Data.Migrations
 
             modelBuilder.Entity("empodelas.Models.ProdutoServico", b =>
                 {
-                    b.HasOne("empodelas.Models.Autonoma", "id_autonoma")
+                    b.HasOne("empodelas.Models.Autonoma", "Id_autonoma")
                         .WithMany()
-                        .HasForeignKey("id_autonoma1");
+                        .HasForeignKey("Id_autonoma1");
 
-                    b.Navigation("id_autonoma");
+                    b.Navigation("Id_autonoma");
                 });
 #pragma warning restore 612, 618
         }
