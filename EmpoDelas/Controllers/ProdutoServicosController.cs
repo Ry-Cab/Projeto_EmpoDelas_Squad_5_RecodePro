@@ -19,13 +19,11 @@ namespace EmpoDelas.Controllers
             _context = context;
         }
 
-        // GET: ProdutoServicos área do usuário comum
+        // GET: ProdutoServicos
         public async Task<IActionResult> Index()
         {
             return View(await _context.ProdutoServico.ToListAsync());
         }
-
-        //GET: Tabela de produtos e serviços do Admin
         public async Task<IActionResult> IndexAdmin()
         {
             return View(await _context.ProdutoServico.ToListAsync());
@@ -48,7 +46,7 @@ namespace EmpoDelas.Controllers
 
             return View(produtoServico);
         }
-        
+
         // GET: ProdutoServicos/Create
         public IActionResult Create()
         {
@@ -60,7 +58,7 @@ namespace EmpoDelas.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id_produtoServico,Codigo_produtoServico,Tipo_produtoServico,Nome_produtoServico,Descricao_produtoServico,Preco_produtoServico,NomeNegocio_autonoma,FK_id_autonoma")] ProdutoServico produtoServico)
+        public async Task<IActionResult> Create([Bind("Id_produtoServico,Codigo_produtoServico,Tipo_produtoServico,Nome_produtoServico,Descricao_produtoServico,Imagem_produtoServico,Preco_produtoServico,NomeNegocio_autonoma,FK_id_autonoma")] ProdutoServico produtoServico)
         {
             if (ModelState.IsValid)
             {
@@ -92,7 +90,7 @@ namespace EmpoDelas.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id_produtoServico,Codigo_produtoServico,Tipo_produtoServico,Nome_produtoServico,Descricao_produtoServico,Preco_produtoServico,NomeNegocio_autonoma,FK_id_autonoma")] ProdutoServico produtoServico)
+        public async Task<IActionResult> Edit(int id, [Bind("Id_produtoServico,Codigo_produtoServico,Tipo_produtoServico,Nome_produtoServico,Descricao_produtoServico,Imagem_produtoServico,Preco_produtoServico,NomeNegocio_autonoma,FK_id_autonoma")] ProdutoServico produtoServico)
         {
             if (id != produtoServico.Id_produtoServico)
             {

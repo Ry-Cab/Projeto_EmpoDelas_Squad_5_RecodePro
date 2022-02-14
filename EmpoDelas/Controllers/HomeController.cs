@@ -1,4 +1,5 @@
 ﻿using EmpoDelas.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -27,6 +28,7 @@ namespace EmpoDelas.Controllers
         {
             return View();
         }
+
         public IActionResult Conosco()
         {
             return View();

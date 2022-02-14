@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EmpoDelas.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220214181957_bancodedados-ver1")]
-    partial class bancodedadosver1
+    [Migration("20220214193946_bancodados-ver2")]
+    partial class bancodadosver2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -403,6 +403,9 @@ namespace EmpoDelas.Migrations
 
                     b.Property<int?>("Id_autonoma1")
                         .HasColumnType("int");
+
+                    b.Property<string>("Imagem_produtoServico")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NomeNegocio_autonoma")
                         .IsRequired()

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace EmpoDelas.Migrations
 {
-    public partial class bancodedadosver1 : Migration
+    public partial class bancodadosver2 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -207,6 +207,7 @@ namespace EmpoDelas.Migrations
                     Tipo_produtoServico = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Nome_produtoServico = table.Column<string>(type: "nvarchar(60)", maxLength: 60, nullable: false),
                     Descricao_produtoServico = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
+                    Imagem_produtoServico = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Preco_produtoServico = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     NomeNegocio_autonoma = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     FK_id_autonoma = table.Column<int>(type: "int", nullable: false),

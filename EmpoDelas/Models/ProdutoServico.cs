@@ -25,6 +25,8 @@ namespace empodelas.Models
         [StringLength(255)]
         public string Descricao_produtoServico { get; set; }
 
+        public string Imagem_produtoServico { get; set; }
+
         [Required(ErrorMessage = "Por favor, digite o preço do seu produto ou serviço.")]
         public decimal Preco_produtoServico { get; set; }
 

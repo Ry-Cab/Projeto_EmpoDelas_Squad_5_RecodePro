@@ -1,71 +1,50 @@
 ﻿@model IEnumerable<empodelas.Models.ProdutoServico>
 
-@{
-    ViewData["Title"] = "Index";
-}
+    @{
+    ViewData["Title"] = "Produtos e Serviços";
+    }
 
-<h1>Index</h1>
+    <link rel="stylesheet" href="~/css/produto.css">
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Codigo_produtoServico)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Tipo_produtoServico)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome_produtoServico)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Descricao_produtoServico)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Preco_produtoServico)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NomeNegocio_autonoma)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FK_id_autonoma)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Codigo_produtoServico)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Tipo_produtoServico)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome_produtoServico)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Descricao_produtoServico)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Preco_produtoServico)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NomeNegocio_autonoma)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FK_id_autonoma)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id_produtoServico">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id_produtoServico">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id_produtoServico">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <style>
+        .teste {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        section {
+            margin: auto;
+        }
+    </style>
+
+
+    <main>
+
+        <div><h1 class="tituloProdutos">Produtos e Serviços</h1></div>
+
+        <section class="teste">
+
+
+            @foreach (var item in Model) {
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <img src="@item.Imagem_produtoServico"/>
+                    <span class="span_item">@item.Tipo_produtoServico</span>
+                    <h2 class="card-title">@item.Nome_produtoServico</h2>
+                    <h6 class="card-subtitle mb-2 text-muted">@item.NomeNegocio_autonoma</h6>
+                    <p class="card-text"><strong>R$@item.Preco_produtoServico</strong></p>
+
+                    <div class="div_botoes">
+                        <button class="btn btn-primary">
+                            <a class="a_produtos" asp-action="Details" asp-route-id="@item.Id_produtoServico">Ver Mais</a>
+                        </button>
+                        <button class="btn btn-success">
+                            <a class="a_produtos" asp-action="Contatar" asp-controller="Autonoma" asp-route-id="@item.FK_id_autonoma">Contatar</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            }
+
+        </section>
+    </main>

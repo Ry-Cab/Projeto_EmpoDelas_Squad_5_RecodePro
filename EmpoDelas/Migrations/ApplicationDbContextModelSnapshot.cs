@@ -402,6 +402,9 @@ namespace EmpoDelas.Migrations
                     b.Property<int?>("Id_autonoma1")
                         .HasColumnType("int");
 
+                    b.Property<string>("Imagem_produtoServico")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("NomeNegocio_autonoma")
                         .IsRequired()
                         .HasMaxLength(100)

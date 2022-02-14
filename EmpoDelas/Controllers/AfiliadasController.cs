@@ -49,6 +49,11 @@ namespace EmpoDelas.Controllers
             return View();
         }
 
+        public IActionResult Comprovante()
+        {
+            return View();
+        }
+
         // POST: Afiliadas/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -60,7 +65,7 @@ namespace EmpoDelas.Controllers
             {
                 _context.Add(afiliada);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Comprovante");
             }
             return View(afiliada);
         }
