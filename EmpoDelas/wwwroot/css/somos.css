@@ -1,9 +1,8 @@
-﻿.sobrenos_somos {
+﻿.sobrenos_somos{
     font-family: 'Heavitas';
-    font-size: 70px;
-    margin-top: 20px;
+    font-size: 40px;
+    margin-top: 60px;
     text-align: center;
-    
 }
 
 .accordion{
@@ -14,4 +13,36 @@
 .card-group{
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img{
+    width: 100%;
+}
+
+
+/*-------------------- MEDIAS QUERY --------------------*/
+
+
+
+@media (min-width: 320px){
+    .card img{
+        width: 250px;
+    }
+
+    .card-group{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 600px){
+    .card img{
+        width: 100%;
+    }
 }

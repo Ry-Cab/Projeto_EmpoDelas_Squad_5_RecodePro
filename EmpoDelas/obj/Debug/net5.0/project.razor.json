@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\EmpoDelas.csproj",
+  "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\EmpoDelas.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,158 +15619,158 @@
   "RootNamespace": "EmpoDelas",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Home\\Administrador.cshtml",
-      "TargetPath": "Views\\Home\\Administrador.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Afiliadas\\Details.cshtml",
-      "TargetPath": "Views\\Afiliadas\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Autonomas\\Delete.cshtml",
-      "TargetPath": "Views\\Autonomas\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Afiliacaos\\Delete.cshtml",
-      "TargetPath": "Views\\Afiliacaos\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\ProdutoServicos\\Delete.cshtml",
-      "TargetPath": "Views\\ProdutoServicos\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\ProdutoServicos\\Index.cshtml",
-      "TargetPath": "Views\\ProdutoServicos\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Afiliadas\\Edit.cshtml",
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Afiliadas\\Edit.cshtml",
       "TargetPath": "Views\\Afiliadas\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\ProdutoServicos\\Details.cshtml",
-      "TargetPath": "Views\\ProdutoServicos\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Afiliacaos\\Details.cshtml",
-      "TargetPath": "Views\\Afiliacaos\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Autonomas\\Details.cshtml",
-      "TargetPath": "Views\\Autonomas\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Afiliacaos\\Edit.cshtml",
-      "TargetPath": "Views\\Afiliacaos\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Home\\Somos.cshtml",
-      "TargetPath": "Views\\Home\\Somos.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Autonomas\\Edit.cshtml",
-      "TargetPath": "Views\\Autonomas\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Afiliadas\\Create.cshtml",
-      "TargetPath": "Views\\Afiliadas\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Autonomas\\Index.cshtml",
-      "TargetPath": "Views\\Autonomas\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Afiliadas\\Delete.cshtml",
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Afiliadas\\Delete.cshtml",
       "TargetPath": "Views\\Afiliadas\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Home\\Conosco.cshtml",
-      "TargetPath": "Views\\Home\\Conosco.cshtml",
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\ProdutoServicos\\Details.cshtml",
+      "TargetPath": "Views\\ProdutoServicos\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\ProdutoServicos\\Create.cshtml",
-      "TargetPath": "Views\\ProdutoServicos\\Create.cshtml",
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Home\\Administrador.cshtml",
+      "TargetPath": "Views\\Home\\Administrador.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Afiliadas\\Index.cshtml",
-      "TargetPath": "Views\\Afiliadas\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Autonomas\\Create.cshtml",
-      "TargetPath": "Views\\Autonomas\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\ProdutoServicos\\Edit.cshtml",
-      "TargetPath": "Views\\ProdutoServicos\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Shared\\_LoginPartial.cshtml",
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Shared\\_LoginPartial.cshtml",
       "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Afiliacaos\\Create.cshtml",
-      "TargetPath": "Views\\Afiliacaos\\Create.cshtml",
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\ProdutoServicos\\Index.cshtml",
+      "TargetPath": "Views\\ProdutoServicos\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Home\\Somos.cshtml",
+      "TargetPath": "Views\\Home\\Somos.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Afiliacaos\\Index.cshtml",
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Autonomas\\Create.cshtml",
+      "TargetPath": "Views\\Autonomas\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\ProdutoServicos\\Edit.cshtml",
+      "TargetPath": "Views\\ProdutoServicos\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Autonomas\\Edit.cshtml",
+      "TargetPath": "Views\\Autonomas\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\ProdutoServicos\\Delete.cshtml",
+      "TargetPath": "Views\\ProdutoServicos\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Afiliadas\\Details.cshtml",
+      "TargetPath": "Views\\Afiliadas\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\ProdutoServicos\\Create.cshtml",
+      "TargetPath": "Views\\ProdutoServicos\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Afiliadas\\Index.cshtml",
+      "TargetPath": "Views\\Afiliadas\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Afiliacaos\\Delete.cshtml",
+      "TargetPath": "Views\\Afiliacaos\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Afiliacaos\\Index.cshtml",
       "TargetPath": "Views\\Afiliacaos\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Remakker\\Desktop\\Empodelas3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Afiliacaos\\Create.cshtml",
+      "TargetPath": "Views\\Afiliacaos\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Afiliadas\\Create.cshtml",
+      "TargetPath": "Views\\Afiliadas\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Autonomas\\Index.cshtml",
+      "TargetPath": "Views\\Autonomas\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Autonomas\\Details.cshtml",
+      "TargetPath": "Views\\Autonomas\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Autonomas\\Delete.cshtml",
+      "TargetPath": "Views\\Autonomas\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Home\\Conosco.cshtml",
+      "TargetPath": "Views\\Home\\Conosco.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Afiliacaos\\Details.cshtml",
+      "TargetPath": "Views\\Afiliacaos\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Afiliacaos\\Edit.cshtml",
+      "TargetPath": "Views\\Afiliacaos\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\RecodePRO\\PROJETOS\\Recode Projeto em grupo 3\\Projeto_EmpoDelas_Squad_5_RecodePro\\EmpoDelas\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     }
   ],

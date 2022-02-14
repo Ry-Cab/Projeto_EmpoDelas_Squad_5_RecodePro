@@ -43,6 +43,7 @@
   
   #header1{
     background-color: #FFDE59;
+    height: auto;
   }
 
   #header{
@@ -67,13 +68,14 @@
     
   }
   
-  .texto-logo {
+  #texto-logo{
     font-family: 'Fontjek';
-    font-size: 60px;
+    font-size: 30px;
     color: #ff1616;
+    white-space: nowrap;
   }
 
-  .texto-logo:hover {
+  #texto-logo:hover {
     color: #ff1616;
     font-style: none;
     text-decoration: none;

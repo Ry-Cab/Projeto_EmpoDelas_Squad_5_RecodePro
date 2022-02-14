@@ -1,29 +1,25 @@
 /*----------------------SEÇÃO 1   /   HOME - SOBRE NÓS--------------------*/
 
 #secao1{
-  margin-top: auto;
   margin-bottom: 10px;
   padding: 10px 0px;
-  background-image: url('./img/LogoBranca.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
   text-align: center;
-  border: blue solid 1px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100px;
-     
+  width: 100%;
 }
 
-.texto{
-  font-size: 15px;
-  color: #ff1616;
-  margin-top: 40px;
-  font-weight: bold;
-  
+.logoDestaque{
+  margin: 50px 0px 0px 0px;
+  width: 100%;
 }
+
+.logoDestaque img{
+  width: 900px;
+}
+
 #texto1{
   text-align: center;
   display: flex;
@@ -33,11 +29,11 @@
 
 .sobrenos{
   font-family: 'Oswald-SemiBold';
-  font-size: 10px;
+  font-size: 45px;
   text-align: center;
   color: black;
-  margin-top: 0px;
-  
+  margin: 10px 0px;
+  padding: 80px 0px;
 }
 
 /*----------------------FINAL SEÇÃO 1 --------------------*/
@@ -74,7 +70,7 @@
 }
 
 #botaoCadastro:hover{
-  background-color: #ff1616;
+  background-color: #b31010;
 }
 
 #botaoCadastro a{
@@ -91,7 +87,7 @@
   height: auto;
   margin-top: 20px;
   background-color: #f1f1f1;
-  padding: 10px;
+  border-radius: 20px;
 }
 
 #boxDepoimento{
@@ -100,36 +96,55 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 40px 0px;
 }
 
 #tituloDepo{
   height: auto;
-  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #tituloDepo h1{
-  
     font-family: 'Heavitas';
     font-size: 50px;
     text-align: center;
-    padding-top: 10px;
+    padding: 10px;
     color: black;
 }
 
 #textoDepo{
-  
-  font-size: 15pt;
-  padding: 10px;
+  font-size: 11pt;
+  width: 100%;
   height:auto;
-
+  padding: 0px 20px;
 }
 
 #textoDepo p {
   /* font-size: 12pt; */
-  text-align: justify;
-  padding: 40px;
+  text-align: center;
+  padding: 40px 0px;
 }
 
+.imgSecao{
+  width: 100%;
+  border: 1px solid rgb(255, 230, 230);
+  background-color: #fff7f7;
+  margin: 150px 0px 60px 0px;
+  box-shadow: 2px 1px 15px rgb(255, 218, 218);
+}
+
+.imgSecao img{
+  width: 800px;
+  margin: 40px 0px 20px 0px;
+}
+
+.textoImg{
+  margin: 25px 0px 40px 0px;
+  font-size: 20pt;
+}
 
 /*-----------------FIM SEÇÃO 2  /  DEPOIMENTO - HOME-----------------*/
 /*------------------- formulario contato  - CONTATO ---------------------*/
@@ -172,45 +187,119 @@ form input[type=submit]:hover{
 
 /*-------------------- MEDIAS QUERY --------------------*/
 
-@media (max-width: 320px){
-  .texto{
-    font-size: 10px;
+@media (min-width: 320px){
+
+  .logoDestaque img{
+    width: 350px;
+  }
+
+  .sobrenos{
+    font-size: 18pt;
+    padding: 60px 40px;
+  }
+
+  #tituloDepo h1{
+    font-size: 30px;
+  }
+
+  #textoDepo{
+    font-size: 11pt;
+  }
+
+  #MainCadastrar h3{
+    font-size: 20px;  
+  }
+
+  #botaoCadastro{
+    height: 50px;
+    width: 200px; 
+  }
+
+  #botaoCadastro a{
+    font-size: 12pt;
+  }
+
+  .imgSecao img{
+    width: 400px;
   }
   
-  .sobrenos{
-    font-size: 20px;
+  .textoImg{
+    font-size: 10pt;
   }
-}
+
 
 @media (min-width: 600px){
-  .texto{
-    font-size: 20px;
+
+  .logoDestaque img{
+    width: 550px;
   }
 
-  #tituloDepo {
-      font-size: 50px;
+  #tituloDepo h1{
+      font-size: 35px;
   }
   
   .sobrenos{
+    font-size: 27px;
+    padding: 80px 0px;
+  }
+
+  #textoDepo{
+    font-size: 15pt;
+  }
+
+  #MainCadastrar h3{
     font-size: 25px;
   }
+
+  
+  #botaoCadastro{
+    height: 70px;
+    width: 300px;
+  }
+
+  #botaoCadastro a{
+    font-size: 25pt;
+  }
+
+  .imgSecao img{
+    width: 550px;
+  }
+  
+  .textoImg{
+    font-size: 12pt;
+  }
+
+
 }
 
 @media (min-width: 936px){
-  .texto{
-    font-size: 30px;
-  }
-  
-  #secao1{
-    height: 700px;
-  }
 
   .sobrenos{
-    font-size: 30px;
-
+    font-size: 35px;
   }
 
   #boxDepoimento{
     width: 850px;
   }
+
+  .logoDestaque img{
+    width: 700px;
+  }
+
+  #tituloDepo h1{
+    font-size: 50px;
+}
+
+  #textoDepo{
+    font-size: 14pt;
+  }
+  
+  .imgSecao img{
+    width: 800px;
+  }
+  
+  .textoImg{
+    font-size: 16pt;
+  }
+
 }

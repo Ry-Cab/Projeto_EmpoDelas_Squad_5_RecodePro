@@ -2,25 +2,26 @@
     ViewData["Title"] = "Contato";
 }
 
+    <link rel="stylesheet" href="~/css/contato.css">
+
 <style>
     h1 {
         font-family: 'Heavitas';
-        font-size: 53px;
+        font-size: 45px;
         text-align: center;
     }
 </style>
 
 <main>
-    <h1 class="faleConosco">Fale Conosco </h1>
-    <br>
-    <div class="container">
+    <div class="container" id="boxForm">
+        <h1 class="faleConosco">Fale Conosco </h1>
         <div class="box form-group">
             <form style="text-align:center">
-                <input type="text" style="font-size:16pt" class="form-control" id="name" name="name" size="30" placeholder="Nome Completo">
+                <input type="text" style="font-size:12pt" class="form-control" id="name" name="name" size="30" placeholder="Nome Completo">
                 <br><br>
-                <input type="email" style="font-size:16pt" class="form-control" id="email" name="email" size="30" placeholder="E-mail">
+                <input type="email" style="font-size:12pt" class="form-control" id="email" name="email" size="30" placeholder="E-mail">
                 <br><br>
-                <input type="text" style="font-size:16pt" class="form-control" id="tel" name="tel" size="30" placeholder="Telefone">
+                <input type="text" style="font-size:12pt" class="form-control" id="tel" name="tel" size="30" placeholder="Telefone">
                 <br><br>
                 <textarea id="msg" name="msg" class="form-control" placeholder="Descrição" style="font-size:16pt" rows="8" cols="33"></textarea>
                 <br><br>
