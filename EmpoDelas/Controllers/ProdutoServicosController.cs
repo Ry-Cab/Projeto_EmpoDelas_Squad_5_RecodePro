@@ -19,8 +19,14 @@ namespace EmpoDelas.Controllers
             _context = context;
         }
 
-        // GET: ProdutoServicos
+        // GET: ProdutoServicos área do usuário comum
         public async Task<IActionResult> Index()
+        {
+            return View(await _context.ProdutoServico.ToListAsync());
+        }
+
+        //GET: Tabela de produtos e serviços do Admin
+        public async Task<IActionResult> IndexAdmin()
         {
             return View(await _context.ProdutoServico.ToListAsync());
         }
@@ -34,7 +40,7 @@ namespace EmpoDelas.Controllers
             }
 
             var produtoServico = await _context.ProdutoServico
-                .FirstOrDefaultAsync(m => m.id_produtoServico == id);
+                .FirstOrDefaultAsync(m => m.Id_produtoServico == id);
             if (produtoServico == null)
             {
                 return NotFound();
@@ -42,7 +48,7 @@ namespace EmpoDelas.Controllers
 
             return View(produtoServico);
         }
-
+        
         // GET: ProdutoServicos/Create
         public IActionResult Create()
         {
@@ -54,7 +60,7 @@ namespace EmpoDelas.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("id_produtoServico,codigo_produtoServico,tipo_produtoServico,nome_produtoServico,descricao_produtoServico,preco_produtoServico,nomeNegocio_autonoma,FK_id_autonoma")] ProdutoServico produtoServico)
+        public async Task<IActionResult> Create([Bind("Id_produtoServico,Codigo_produtoServico,Tipo_produtoServico,Nome_produtoServico,Descricao_produtoServico,Preco_produtoServico,NomeNegocio_autonoma,FK_id_autonoma")] ProdutoServico produtoServico)
         {
             if (ModelState.IsValid)
             {
@@ -86,9 +92,9 @@ namespace EmpoDelas.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("id_produtoServico,codigo_produtoServico,tipo_produtoServico,nome_produtoServico,descricao_produtoServico,preco_produtoServico,nomeNegocio_autonoma,FK_id_autonoma")] ProdutoServico produtoServico)
+        public async Task<IActionResult> Edit(int id, [Bind("Id_produtoServico,Codigo_produtoServico,Tipo_produtoServico,Nome_produtoServico,Descricao_produtoServico,Preco_produtoServico,NomeNegocio_autonoma,FK_id_autonoma")] ProdutoServico produtoServico)
         {
-            if (id != produtoServico.id_produtoServico)
+            if (id != produtoServico.Id_produtoServico)
             {
                 return NotFound();
             }
@@ -102,7 +108,7 @@ namespace EmpoDelas.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ProdutoServicoExists(produtoServico.id_produtoServico))
+                    if (!ProdutoServicoExists(produtoServico.Id_produtoServico))
                     {
                         return NotFound();
                     }
@@ -125,7 +131,7 @@ namespace EmpoDelas.Controllers
             }
 
             var produtoServico = await _context.ProdutoServico
-                .FirstOrDefaultAsync(m => m.id_produtoServico == id);
+                .FirstOrDefaultAsync(m => m.Id_produtoServico == id);
             if (produtoServico == null)
             {
                 return NotFound();
@@ -147,7 +153,7 @@ namespace EmpoDelas.Controllers
 
         private bool ProdutoServicoExists(int id)
         {
-            return _context.ProdutoServico.Any(e => e.id_produtoServico == id);
+            return _context.ProdutoServico.Any(e => e.Id_produtoServico == id);
         }
     }
 }

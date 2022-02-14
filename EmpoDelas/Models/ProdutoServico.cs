@@ -9,30 +9,31 @@ namespace empodelas.Models
     public class ProdutoServico
     {
         [Key]
-        public int id_produtoServico { get; set; }
+        public int Id_produtoServico { get; set; }
 
         [Required]
-        public string codigo_produtoServico { get; set; }
+        [StringLength(10)]
+        public string Codigo_produtoServico { get; set; }
 
-        [Required(ErrorMessage = "Selecione se é produto ou serviço")]
-        public string tipo_produtoServico { get; set; }
+        [Required(ErrorMessage = "Por favor, selecione se é produto ou serviço.")]
+        public string Tipo_produtoServico { get; set; }
 
         [StringLength(60)]
-        [Required(ErrorMessage = "Digite o nome do seu produto ou serviço")]
-        public string nome_produtoServico { get; set; }
+        [Required(ErrorMessage = "Por favor, digite o nome do seu produto ou serviço.")]
+        public string Nome_produtoServico { get; set; }
 
-        [StringLength(510)]
-        public string descricao_produtoServico { get; set; }
+        [StringLength(255)]
+        public string Descricao_produtoServico { get; set; }
 
-        [Required(ErrorMessage = "Digite o preço do seu produto")]
-        public decimal preco_produtoServico { get; set; }
+        [Required(ErrorMessage = "Por favor, digite o preço do seu produto ou serviço.")]
+        public decimal Preco_produtoServico { get; set; }
 
         [StringLength(100)]
-        [Required(ErrorMessage = "Digite o nome do seu negócio")]
-        public string nomeNegocio_autonoma { get; set; }
+        [Required(ErrorMessage = "Por favor, digite o nome do seu negócio cadastrado.")]
+        public string NomeNegocio_autonoma { get; set; }
 
         public int FK_id_autonoma { get; set; }
-        public virtual Autonoma id_autonoma { get; set; }
+        public virtual Autonoma Id_autonoma { get; set; }
     }
 }
 

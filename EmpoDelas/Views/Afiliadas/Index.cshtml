@@ -13,19 +13,31 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.nome_afiliada)
+                @Html.DisplayNameFor(model => model.Nome_afiliada)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.sobrenome_afiliada)
+                @Html.DisplayNameFor(model => model.Sobrenome_afiliada)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.email_afiliada)
+                @Html.DisplayNameFor(model => model.Email_afiliada)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.senha_afiliada)
+                @Html.DisplayNameFor(model => model.DataNasc_afiliada)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.telefone_afiliada)
+                @Html.DisplayNameFor(model => model.NumTelefone_afiliada)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Endereco_afiliada)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cep_afiliada)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descricao_afiliada)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ComprovanteResid_afiliada)
             </th>
             <th></th>
         </tr>
@@ -34,24 +46,36 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.nome_afiliada)
+                @Html.DisplayFor(modelItem => item.Nome_afiliada)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.sobrenome_afiliada)
+                @Html.DisplayFor(modelItem => item.Sobrenome_afiliada)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.email_afiliada)
+                @Html.DisplayFor(modelItem => item.Email_afiliada)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.senha_afiliada)
+                @Html.DisplayFor(modelItem => item.DataNasc_afiliada)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.telefone_afiliada)
+                @Html.DisplayFor(modelItem => item.NumTelefone_afiliada)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.id_afiliada">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.id_afiliada">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.id_afiliada">Delete</a>
+                @Html.DisplayFor(modelItem => item.Endereco_afiliada)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cep_afiliada)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao_afiliada)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ComprovanteResid_afiliada)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id_afiliada">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id_afiliada">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id_afiliada">Delete</a>
             </td>
         </tr>
 }

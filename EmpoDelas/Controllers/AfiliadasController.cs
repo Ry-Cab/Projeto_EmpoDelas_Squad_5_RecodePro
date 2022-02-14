@@ -34,7 +34,7 @@ namespace EmpoDelas.Controllers
             }
 
             var afiliada = await _context.Afiliada
-                .FirstOrDefaultAsync(m => m.id_afiliada == id);
+                .FirstOrDefaultAsync(m => m.Id_afiliada == id);
             if (afiliada == null)
             {
                 return NotFound();
@@ -54,7 +54,7 @@ namespace EmpoDelas.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("id_afiliada,nome_afiliada,sobrenome_afiliada,email_afiliada,senha_afiliada,telefone_afiliada")] Afiliada afiliada)
+        public async Task<IActionResult> Create([Bind("Id_afiliada,Nome_afiliada,Sobrenome_afiliada,Email_afiliada,DataNasc_afiliada,NumTelefone_afiliada,Endereco_afiliada,Cep_afiliada,Descricao_afiliada,ComprovanteResid_afiliada")] Afiliada afiliada)
         {
             if (ModelState.IsValid)
             {
@@ -86,9 +86,9 @@ namespace EmpoDelas.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("id_afiliada,nome_afiliada,sobrenome_afiliada,email_afiliada,senha_afiliada,telefone_afiliada")] Afiliada afiliada)
+        public async Task<IActionResult> Edit(int id, [Bind("Id_afiliada,Nome_afiliada,Sobrenome_afiliada,Email_afiliada,DataNasc_afiliada,NumTelefone_afiliada,Endereco_afiliada,Cep_afiliada,Descricao_afiliada,ComprovanteResid_afiliada")] Afiliada afiliada)
         {
-            if (id != afiliada.id_afiliada)
+            if (id != afiliada.Id_afiliada)
             {
                 return NotFound();
             }
@@ -102,7 +102,7 @@ namespace EmpoDelas.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!AfiliadaExists(afiliada.id_afiliada))
+                    if (!AfiliadaExists(afiliada.Id_afiliada))
                     {
                         return NotFound();
                     }
@@ -125,7 +125,7 @@ namespace EmpoDelas.Controllers
             }
 
             var afiliada = await _context.Afiliada
-                .FirstOrDefaultAsync(m => m.id_afiliada == id);
+                .FirstOrDefaultAsync(m => m.Id_afiliada == id);
             if (afiliada == null)
             {
                 return NotFound();
@@ -147,7 +147,7 @@ namespace EmpoDelas.Controllers
 
         private bool AfiliadaExists(int id)
         {
-            return _context.Afiliada.Any(e => e.id_afiliada == id);
+            return _context.Afiliada.Any(e => e.Id_afiliada == id);
         }
     }
 }
