@@ -36,10 +36,10 @@ namespace EmpoDelas.Controllers
         }
         public IActionResult Administrador()
         {
-          if(User.Identity.Name == "cabral.reis23@gmail.com")
-            {
+          if(User.Identity.Name == "empodelas@admin.com")
+           {
                 return View();
-            }
+           }
             return BadRequest();
         }
 
