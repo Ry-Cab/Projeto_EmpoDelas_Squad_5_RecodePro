@@ -7,38 +7,13 @@
   /*-------------------CODIGO-----------*/
   
   @font-face{
-    font-family: 'JushleyShine';
-    src: url('./fontes/JushleyShine.otf');
+    font-family: 'playlist-script';
+    src: url('./fontes/playlist-script.otf');
   }
   
   @font-face{
-    font-family: 'Oswald-SemiBold';
-    src: url('./fontes/Oswald-SemiBold.ttf');
-  }
-  
-  @font-face{
-    font-family: 'accid';
-    src: url('./fontes/accid.ttf');
-  }
-  
-  @font-face{
-    font-family: 'Black_Emerald';
-    src: url('./fontes/Black_Emerald.ttf');
-  }
-  
-  @font-face{
-    font-family: 'Fontjek';
-    src: url('./fontes/Fontjek.otf');
-  }
-  
-  @font-face{
-    font-family: 'MyLove';
-    src: url('./fontes/MyLove.otf');
-  }
-  
-  @font-face{
-    font-family: 'Heavitas';
-    src: url('./fontes/Heavitas.ttf');
+    font-family: 'questrial';
+    src: url('./fontes/questrial.ttf');
   }
   
   #header1{
@@ -113,7 +88,7 @@
   
   li > a{
     text-decoration: none;
-    font-family: 'Oswald-SemiBold';
+    font-family: 'questrial';
     font-size: 17pt;
     white-space: nowrap;
   }

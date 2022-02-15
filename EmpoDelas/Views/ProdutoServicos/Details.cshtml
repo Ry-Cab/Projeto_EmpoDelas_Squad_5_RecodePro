@@ -3,6 +3,9 @@
 @{
     ViewData["Title"] = "Details";
 }
+
+<link rel="stylesheet" href="~/css/produto.css">
+
 <h4>@Html.DisplayFor(model => model.Tipo_produtoServico)</h4>
 <h1>@Html.DisplayFor(model => model.Nome_produtoServico)</h1>
 <hr />
@@ -12,25 +15,25 @@
     </div>
     <div class="col">
         <dl class="row">
-            <dt class="col-sm-2">
+            <dt class="col-sm-10">
                Código:
             </dt>
             <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.Codigo_produtoServico)
             </dd>
-            <dt class="col-sm-2">
+            <dt class="col-sm-10">
               Descrição:
             </dt>
             <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.Descricao_produtoServico)
             </dd>
-            <dt class="col-sm-2">
+            <dt class="col-sm-10">
                 Preço:
             </dt>
             <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.Preco_produtoServico)
             </dd>
-            <dt class="col-sm-2">
+            <dt class="col-sm-10">
                 Nome do negócio
             </dt>
             <dd class="col-sm-10">

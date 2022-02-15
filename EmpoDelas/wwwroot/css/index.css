@@ -28,7 +28,7 @@
 }
 
 .sobrenos{
-  font-family: 'Oswald-SemiBold';
+  font-family: 'questrial';
   font-size: 45px;
   text-align: center;
   color: black;
@@ -48,7 +48,7 @@
 }
 
 #MainCadastrar h3{
-  font-family: 'Oswald-SemiBold';
+  font-family: 'questrial';
   font-size: 30px;
   text-align: center;
   font-style: italic;
@@ -74,7 +74,7 @@
 }
 
 #botaoCadastro a{
-  font-family: 'Heavitas';
+  font-family: 'questrial';
   text-decoration: none;
   font-size: 24pt;
   color: white;
@@ -156,7 +156,7 @@
 }
 
 #bt1 a{
-  font-family: 'Oswald-SemiBold';
+  font-family: 'questrial';
   font-size: 20pt;
   color: #f1f1f1;
   text-decoration: none;
