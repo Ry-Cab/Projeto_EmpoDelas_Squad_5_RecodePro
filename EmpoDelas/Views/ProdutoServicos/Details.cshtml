@@ -3,64 +3,42 @@
 @{
     ViewData["Title"] = "Details";
 }
-
-<h1>Details</h1>
-
-<div>
-    <h4>ProdutoServico</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Codigo_produtoServico)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Codigo_produtoServico)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Tipo_produtoServico)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Tipo_produtoServico)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nome_produtoServico)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nome_produtoServico)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Descricao_produtoServico)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Descricao_produtoServico)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Imagem_produtoServico)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Imagem_produtoServico)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Preco_produtoServico)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Preco_produtoServico)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NomeNegocio_autonoma)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NomeNegocio_autonoma)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FK_id_autonoma)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FK_id_autonoma)
-        </dd>
-    </dl>
+<h4>@Html.DisplayFor(model => model.Tipo_produtoServico)</h4>
+<h1>@Html.DisplayFor(model => model.Nome_produtoServico)</h1>
+<hr />
+<div class="row">
+    <div class="col">
+        <img src="@Html.DisplayFor(model => model.Imagem_produtoServico)" />
+    </div>
+    <div class="col">
+        <dl class="row">
+            <dt class="col-sm-2">
+               Código:
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Codigo_produtoServico)
+            </dd>
+            <dt class="col-sm-2">
+              Descrição:
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Descricao_produtoServico)
+            </dd>
+            <dt class="col-sm-2">
+                Preço:
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Preco_produtoServico)
+            </dd>
+            <dt class="col-sm-2">
+                Nome do negócio
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.NomeNegocio_autonoma)
+            </dd>
+        </dl>
+    </div>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id_produtoServico">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Voltar</a>
 </div>
