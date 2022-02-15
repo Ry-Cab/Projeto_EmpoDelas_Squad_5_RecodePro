@@ -4,53 +4,12 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Incial</h1>
+
 
 <p>
     <a asp-action="Create">Crie um novo</a>
 </p>
 <table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome_autonoma)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Sobrenome_autonoma)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email_autonoma)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DataNasc_autonoma)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NumTelefone_autonoma)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Endereco_autonoma)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cep_autonoma)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NomeNegocio_autonoma)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ContatoNegocio_autonoma)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CategoriaNegocio_autonoma)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DescricaoNegocio_autonoma)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ComprovanteResid_autonoma)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
@@ -87,9 +46,22 @@
             <td>
                 @Html.DisplayFor(modelItem => item.DescricaoNegocio_autonoma)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ComprovanteResid_autonoma)
-            </td>
+            @if (item.ComprovanteResid_autonoma == null)
+            {
+
+        <td>
+            <span class="badge badge-danger">Comprovante não registrado</span>
+           
+        </td>
+            }
+            else
+            {
+        <td>
+            <span class="badge badge-success">Comprovante registrado</span>
+            
+        </td>
+            }
+
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id_autonoma">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id_autonoma">Details</a> |

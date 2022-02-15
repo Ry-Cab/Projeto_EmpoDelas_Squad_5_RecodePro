@@ -3,6 +3,13 @@
 @{
     ViewData["Title"] = "Index";
 }
+<style>
+    body{
+        overflow-x: hidden;
+    }
+    
+   
+</style>
 
 <h1>Página inicial Administrador</h1>
 
@@ -10,35 +17,7 @@
     <a asp-action="Create">Criar um novo</a>
 </p>
 <table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Codigo_produtoServico)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Tipo_produtoServico)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome_produtoServico)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Descricao_produtoServico)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Imagem_produtoServico)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Preco_produtoServico)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NomeNegocio_autonoma)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FK_id_autonoma)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
+    
     <tbody>
 @foreach (var item in Model) {
         <tr>
@@ -54,18 +33,42 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Descricao_produtoServico)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Imagem_produtoServico)
-            </td>
+            @if (item.Imagem_produtoServico == null)
+            {
+        <td>
+            <span class="badge badge-danger">Não contém imagem</span>
+        </td>
+        
+                }
+                else
+                {
+        <td>
+            <span class="badge badge-success">Contém imagem</span>
+        </td>
+        
+                }
+            
             <td>
                 @Html.DisplayFor(modelItem => item.Preco_produtoServico)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.NomeNegocio_autonoma)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FK_id_autonoma)
-            </td>
+            @if(item.FK_id_autonoma == 0)
+                {
+        <td>
+            <span class="badge badge-danger">FK não relacionada</span>
+        </td>
+        
+
+                }
+                else
+                {
+        <td>
+            @Html.DisplayFor(modelItem => item.FK_id_autonoma)
+        </td>
+                }
+            
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id_produtoServico">Editar</a> |
                 <a asp-action="Details" asp-route-id="@item.Id_produtoServico">Detalhes</a> |

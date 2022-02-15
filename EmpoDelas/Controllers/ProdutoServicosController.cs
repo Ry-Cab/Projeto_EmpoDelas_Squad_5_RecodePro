@@ -22,9 +22,22 @@ namespace EmpoDelas.Controllers
         // GET: ProdutoServicos
         public async Task<IActionResult> Index()
         {
-            return View(await _context.ProdutoServico.ToListAsync());
+        
+                if(User.Identity.Name == null)
+            {
+                return View(await _context.ProdutoServico.ToListAsync());
+            }
+            else
+            {
+                return RedirectToAction("IndexUsers");
+            }
+     
         }
         public async Task<IActionResult> IndexAdmin()
+        {
+            return View(await _context.ProdutoServico.ToListAsync());
+        }
+        public async Task<IActionResult> IndexUsers()
         {
             return View(await _context.ProdutoServico.ToListAsync());
         }

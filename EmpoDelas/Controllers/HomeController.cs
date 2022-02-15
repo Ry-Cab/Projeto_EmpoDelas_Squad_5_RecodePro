@@ -31,11 +31,16 @@ namespace EmpoDelas.Controllers
 
         public IActionResult Conosco()
         {
-            return View();
+           
+           return View();
         }
         public IActionResult Administrador()
         {
-            return View();
+          if(User.Identity.Name == "cabral.reis23@gmail.com")
+            {
+                return View();
+            }
+            return BadRequest();
         }
 
 

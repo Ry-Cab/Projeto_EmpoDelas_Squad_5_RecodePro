@@ -1,0 +1,65 @@
+﻿@model IEnumerable<empodelas.Models.ProdutoServico>
+
+    @{
+    ViewData["Title"] = "Produtos e Serviços";
+    }
+
+    <link rel="stylesheet" href="~/css/produto.css">
+
+    <style>
+        .teste {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        section {
+            margin: auto;
+        }
+    </style>
+
+
+    <main>
+
+        <div><h1 class="tituloProdutos">Produtos e Serviços</h1></div>
+        <p>
+            <a asp-action="Create">Criar um novo</a>
+        </p>
+
+        <section class="teste">
+
+
+            @foreach (var item in Model)
+            {
+                @if (item.FK_id_autonoma == 0 && item.Imagem_produtoServico == null)
+                {
+
+                }
+                else
+                {
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <img src="@item.Imagem_produtoServico" />
+                            <span class="span_item">@item.Tipo_produtoServico</span>
+                            <h2 class="card-title">@item.Nome_produtoServico</h2>
+                            <h6 class="card-subtitle mb-2 text-muted">@item.NomeNegocio_autonoma</h6>
+                            <p class="card-text"><strong>R$@item.Preco_produtoServico</strong></p>
+
+                            <div class="div_botoes">
+                                <button class="btn btn-primary">
+                                    <a class="a_produtos" asp-action="Details" asp-route-id="@item.Id_produtoServico">Ver Mais</a>
+                                </button>
+                                <button class="btn btn-success">
+                                    <a class="a_produtos" asp-action="Contatar" asp-controller="Autonoma" asp-route-id="@item.FK_id_autonoma">Contatar</a>
+                                </button>
+                                <button class="btn btn-success">
+                                    <a class="a_produtos" href="#">Afiliar-se</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            }
+
+        </section>
+    </main>
