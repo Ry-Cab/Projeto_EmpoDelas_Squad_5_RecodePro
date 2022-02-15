@@ -154,12 +154,9 @@
     font-family: open, sans-serif;
     font-size: 50px;
   }
-  
 
 /* ------------------------ MEDIA QUERY --------------------------*/
-
-
-  @media (max-width: 600px){
+@media (max-width: 600px) {
     .texto-logo {
       font-size: 40px;
     }
