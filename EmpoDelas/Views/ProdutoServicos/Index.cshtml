@@ -6,18 +6,6 @@
 
     <link rel="stylesheet" href="~/css/produto.css">
 
-    <style>
-        .teste {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        section {
-            margin: auto;
-        }
-    </style>
-
-
     <main>
 
         <div><h1 class="tituloProdutos">Produtos e Serviços</h1></div>
@@ -33,10 +21,10 @@
                 }
                 else
                 {
-                    <div class="card" style="width: 18rem;">
+                    <div class="card">
                         <div class="card-body">
                             <div class="img1">
-                            <img id="imgCard" src="@item.Imagem_produtoServico" />
+                                <img id="imgCard" src="@item.Imagem_produtoServico" />
                             </div>
                             <span class="span_item">@item.Tipo_produtoServico</span>
                             <h2 class="card-title">@item.Nome_produtoServico</h2>
@@ -44,18 +32,16 @@
                             <p class="card-text"><strong>R$@item.Preco_produtoServico</strong></p>
 
                             <div class="div_botoes">
-                                <button class="btn btn-secondary">
+                                <button id="btn1" class="btn btn-secondary">
                                     <a class="a_produtos" asp-action="Details" asp-route-id="@item.Id_produtoServico">Ver Mais</a>
                                 </button>
-                                <button class="btn btn-warning">
+                                <button id="btn2" class="btn btn-warning">
                                     <a class="a_produtos" asp-action="Contatar" asp-controller="Autonoma" asp-route-id="@item.FK_id_autonoma">Contatar</a>
                                 </button>
                             </div>
                         </div>
                     </div>
                 }
-
             }
-
         </section>
     </main>
