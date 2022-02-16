@@ -53,9 +53,8 @@
   text-align: center;
   font-style: italic;
 }
-.jumbotron {
-    //background-image: url("img/trescarneirosvistodecima.jpg");
-}
+
+
 #fraseMain{
   padding: 20px;
 }
@@ -209,6 +208,10 @@ form input[type=submit]:hover{
 
 @media (min-width: 320px){
 
+  .banner_home img{
+    width :350px;
+ } 
+
   .logoDestaque img{
     width: 350px;
   }
@@ -247,10 +250,27 @@ form input[type=submit]:hover{
     font-size: 10pt;
   }
 
+  .div-tres-carneiros{
+    width: 500px;
+
+  }
+
+  
+  .container h1{
+  font-size: 20px;
+  }
+
+  .container h3{
+    font-size: 14px;
+  }
+  
+  .container p{
+    font-size: 12px;
+  }
 
 @media (min-width: 600px){
-   .banner_home{
-       width :auto;
+   .banner_home img{
+       width :750px;
    } 
   .logoDestaque img{
     width: 550px;
@@ -291,10 +311,29 @@ form input[type=submit]:hover{
     font-size: 12pt;
   }
 
+  .div-tres-carneiros{
+    width: 750px;
+    
+  }
+
+  .container h1{
+    font-size: 28px;
+  }
+
+  .container h3{
+    font-size: 22px;
+  }
+  .container p{
+    font-size: 20px;
+  }
 
 }
 
 @media (min-width: 936px){
+
+  .banner_home img{
+    width: 1000px;
+  }
 
   .sobrenos{
     font-size: 35px;
@@ -320,4 +359,21 @@ form input[type=submit]:hover{
     font-size: 16pt;
   }
 
+  .div-tres-carneiros{
+    width: 1000px;
+    
+  }
+
+  
+  .container h1{
+    font-size: 38px;
+  }
+
+  .container h3{
+    font-size: 32px;
+  }
+
+  .container p{
+    font-size: 22px;
+  }
 }
